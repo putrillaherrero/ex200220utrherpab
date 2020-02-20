@@ -1,0 +1,344 @@
+*{
+  box-sizing: border-box;
+}
+/*Aplicacion*/
+nav{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  border: 1px solid black;
+
+
+
+  .linkutrherpab{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+
+  }
+}
+
+
+@media screen and (max-width: 675px){
+  nav{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+
+
+%bordeutrherpab{
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+.contenedorgridutrherpab {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  padding: 20px;
+  @extend %bordeutrherpab;
+
+  &__cabeceraputrherpab {
+    grid-column: 1 / 3;
+    @extend %bordeutrherpab;
+    min-height: 200px;
+    line-height: 200px;
+  }
+
+  &__asideutrherpab {
+    grid-column: 2 / 3;
+    @extend %bordeutrherpab;
+    height: 600px;
+    line-height: 600px;
+  }
+
+  &__mainutrherpab {
+    grid-column: 1 / 2;
+    @extend %bordeutrherpab;
+    height: 600px;
+    line-height: 600px;
+  }
+
+  &__footerutrherpab {
+    grid-column: 1 / 3;
+    @extend %bordeutrherpab;
+    height: 200px;
+    line-height: 200px;
+  }
+}
+
+@media screen and (max-width: 675px){
+  %bordeutrherpab{
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+
+
+  }
+  .contenedorgridutrherpab {
+
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    @extend %bordeutrherpab;
+
+    &__cabeceraputrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab;
+      min-height: 200px;
+      line-height: 200px;
+
+    }
+
+    &__asideutrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__mainutrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__footerutrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab;
+      height: 200px;
+      line-height: 200px;
+    }
+  }
+}
+
+
+
+%bordeutrherpab2{
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+.contenedorgrid2utrherpab {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  padding: 20px;
+  @extend %bordeutrherpab2;
+
+
+
+  &__cabecera2putrherpab {
+    grid-column: 1 / 4;
+    @extend %bordeutrherpab2;
+    min-height: 200px;
+    line-height: 200px;
+  }
+
+  &__aside1utrherpab {
+    grid-column: 1 / 2;
+    @extend %bordeutrherpab2;
+    height: 600px;
+    line-height: 600px;
+  }
+
+  &__main2utrherpab {
+    grid-column: 2 / 3;
+    @extend %bordeutrherpab2;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+
+    &__cuerpito1utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      height: 250px;
+      line-height: 250px;
+    }
+
+    &__cuerpito2utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      height: 250px;
+      line-height: 250px;
+    }
+  }
+
+  &__aside2utrherpab {
+    grid-column: 3 / 4;
+    @extend %bordeutrherpab2;
+    height: 600px;
+    line-height: 600px;
+  }
+
+  &__footer2utrherpab {
+    grid-column: 1 / 4;
+    @extend %bordeutrherpab2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 20px;
+    &__piecito1utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      min-height: 150px;
+      line-height: 150px;
+    }
+
+    &__piecito2utrherpab {
+      grid-column: 2 / 3;
+      @extend %bordeutrherpab2;
+      min-height: 150px;
+      line-height: 150px;
+    }
+
+    &__piecito3utrherpab {
+      grid-column: 3 / 4;
+      @extend %bordeutrherpab2;
+      min-height: 150px;
+      line-height: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 675px){
+  %bordeutrherpab2{
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+  }
+  .contenedorgrid2utrherpab {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    @extend %bordeutrherpab2;
+
+
+
+    &__cabecera2putrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      min-height: 200px;
+      line-height: 200px;
+    }
+
+    &__aside1utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__main2utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      display: grid;
+      grid-template-columns: auto;
+      padding: 20px;
+
+      &__cuerpito1utrherpab {
+        grid-column: 1 / 2;
+        @extend %bordeutrherpab2;
+        height: 250px;
+        line-height: 250px;
+      }
+
+      &__cuerpito2utrherpab {
+        grid-column: 1 / 2;
+        @extend %bordeutrherpab2;
+        height: 250px;
+        line-height: 250px;
+      }
+    }
+
+    &__aside2utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__footer2utrherpab {
+      grid-column: 1 / 2;
+      @extend %bordeutrherpab2;
+      display: grid;
+      grid-template-columns: auto;
+      padding: 20px;
+      &__piecito1utrherpab {
+        grid-column: 1 / 2;
+        @extend %bordeutrherpab2;
+        min-height: 150px;
+        line-height: 150px;
+      }
+
+      &__piecito2utrherpab {
+        grid-column: 1 / 2;
+        @extend %bordeutrherpab2;
+        min-height: 150px;
+        line-height: 150px;
+      }
+
+      &__piecito3utrherpab {
+        grid-column: 1 / 2;
+        @extend %bordeutrherpab2;
+        min-height: 150px;
+        line-height: 150px;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1280px){
+  .contenedorgridimagenesutrherpab{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    &imagenutrherpab{
+      width: 100%;
+      height: auto;
+    }
+
+
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  .contenedorgridimagenesutrherpab{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    &imagenutrherpab{
+      width: 100%;
+      height: auto;
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  .contenedorgridimagenesutrherpab{
+    display: grid;
+    grid-template-columns: 100%;
+
+    &imagenutrherpab{
+      width: 100%;
+      height: auto;
+    }
+
+
+  }
+}
+
+.contenedorfleximagenesutrherpab{
+  display: flex;
+  align-items: flex-start;
+
+  &__imagen1utrherpab{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+  }
+}
